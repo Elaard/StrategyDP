@@ -9,7 +9,7 @@ namespace DP_calculator
         public static void Use()
         {
 
-            Order deliverStrategy = new Order();
+            OrderStrategy deliverStrategy = new OrderStrategy();
 
             deliverStrategy.SetDeliverStrategy(new DeliverMan());
             deliverStrategy.CalculateTotalCost(10);
@@ -58,7 +58,7 @@ namespace DP_calculator
         }
     }
 
-    class Order
+    class OrderStrategy
     {
         protected IDeliverStrategy _deliverStrategy;
 
